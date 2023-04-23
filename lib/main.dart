@@ -1,11 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/gradient_body.dart';
+import 'package:quiz_app/start_screen.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
-        body: GradientBody(),
+        body: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color.fromARGB(255, 73, 10, 191),
+                Color.fromARGB(255, 68, 14, 167),
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
+          child: const StartScreen(),
+        ),
       ),
     ),
   );
