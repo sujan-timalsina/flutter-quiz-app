@@ -13,13 +13,13 @@ class StartScreen extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Image.asset(
-            'assets/images/quiz-logo.png',
+            'assets/images/quiz-logo2.png',
             width: 200,
-            color: const Color.fromARGB(176, 255, 255, 255),
+            // color: const Color.fromARGB(176, 255, 255, 255),
           ),
           const SizedBox(height: 50),
           Text(
-            'Learn Flutter the fun way!',
+            'Learn Flutter Through Quiz!',
             style: GoogleFonts.lato(
               color: Colors.white,
               fontSize: 20,
